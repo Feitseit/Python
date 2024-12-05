@@ -1,0 +1,25 @@
+# 01. ülesane
+# Kleeman 05.12.24
+
+
+# see impordib kilpkonna mooduli
+import turtle
+
+turtle.speed(1)
+
+turtle.penup()
+
+turtle.goto(-500,300)
+
+turtle.pendown()
+
+# liigutab konna edasi 200 pikslit ja joonistab vasakule liigutedes kolmnurga
+turtle.forward(200)
+turtle.left(120)
+turtle.forward(200)
+turtle.left(120)
+turtle.forward(200)
+turtle.left(120)
+
+# lõpetab konna, et ei jookseks kokku.
+turtle.done()
