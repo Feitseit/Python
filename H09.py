@@ -54,6 +54,6 @@ print(f"Keskmine ulatus: {sum(ranges)/len(ranges)}")
 
 for autod in ev_data:
     if autod[1].isnumeric():
-         if int(autod[1] > 300:
+         if int(autod[1])> 300:
             print(autod[0])
 
