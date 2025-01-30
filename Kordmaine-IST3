@@ -28,4 +28,21 @@
 # fail.close()        
 
 
+musa = "edm.txt"
+fail = open("edm.txt", encoding="UTF-8")
 
+nr = 1
+for pala in fail:
+    print(str(nr) + ". " + pala, end="")
+    nr += 1
+
+print()
+valik = int(input("Vali lugu: "))fail = open(musa, encoding="UTF-8")
+mangin = 1
+for pala in fail:
+    if valik == mangin:
+        print(pala, end="")
+    mangin+=1
+
+
+fail.close()       
