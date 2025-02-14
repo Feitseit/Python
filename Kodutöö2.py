@@ -16,6 +16,8 @@ turtle.pensize(2)
 turtle.speed(5) 
 kylg = 50
 radius = 50
+kujund = input("Millist kujundit soovid joonistada (viisnurk, ring, ruut, suvaline ) või jäta tühjaks et programmist väljuda: ")
+arv = int(input("Sisesta kujundite arv või jäta tühajks et programmist väljuda: "))
 
 
 def joonista_viisnurk():
@@ -40,36 +42,22 @@ def suvaline_kujund():
     else:
         joonista_viisnurk()
 
-def koik():
-    while True:
-        kujund = input("Millist kujundit soovid joonistada (viisnurk, ring, ruut, suvaline ) või jäta tühjaks et programmist väljuda: ")
-        if not kujund:
-            print("Programmist väljutakse")
-            turtle.bye()
-            break
-        arv = input("Sisesta kujundite arv või jäta tühajks et programmist väljuda: ")
-        if not arv:
-            print("Programmist väljutakse")
-            turtle.bye()
-            break
-        arv = int(arv)
 
-        for _  in range(arv):
-            x = random.randint(-300,300) 
-            y = random.randint(-300,300)
-            turtle.penup()
-            turtle.goto(x, y)
-            turtle.pendown()
+for _  in range(arv):
+    x = random.randint(-300,300) 
+    y = random.randint(-300,300)
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
             
-            if kujund == "viisnurk":
-                joonista_viisnurk()
-            elif kujund == "ruut":
-                joonista_ruut()
-            elif kujund == "ring":
-                joonista_ring()
-            elif kujund == "suvaline":
-                suvaline_kujund()
-            else:
-                print("Viga, tundmatu kujund!")
-                break
-koik()
+    if kujund == "viisnurk":
+        joonista_viisnurk()
+    elif kujund == "ruut":
+        joonista_ruut()
+    elif kujund == "ring":
+        joonista_ring()
+    elif kujund == "suvaline":
+        suvaline_kujund()
+    else:
+        print("Viga, tundmatu kujund!")
+        break
