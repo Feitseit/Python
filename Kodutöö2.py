@@ -14,9 +14,9 @@ import turtle
 import random
 turtle.pensize(3)
 turtle.speed(7) 
-kylg = 50
-radius = 50
-kujund = input("Millise kujundi joonistame (ruut, ring, viisnurk, suvaline ): ")
+kylg = 40
+radius = 40
+kujund = input("Millise kujundi joonistame (ruut, ring, viisnurk, suvaline): ")
 arv = int(input("Mitu kujundit joonistan: "))
 
 
@@ -44,8 +44,8 @@ def suvaline_kujund():
 
 
 for _  in range(arv):
-    x = random.randint(-300,300) 
-    y = random.randint(-300,300)
+    x = random.randint(-200,200) 
+    y = random.randint(-200,200)
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
