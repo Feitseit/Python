@@ -12,12 +12,12 @@
 
 import turtle
 import random
-turtle.pensize(2)
-turtle.speed(5) 
+turtle.pensize(3)
+turtle.speed(7) 
 kylg = 50
 radius = 50
-kujund = input("Millist kujundit soovid joonistada (viisnurk, ring, ruut, suvaline ) või jäta tühjaks et programmist väljuda: ")
-arv = int(input("Sisesta kujundite arv või jäta tühajks et programmist väljuda: "))
+kujund = input("Millise kujundi joonistame (ruut, ring, viisnurk, suvaline ): ")
+arv = int(input("Mitu kujundit joonistan: "))
 
 
 def joonista_viisnurk():
@@ -59,7 +59,7 @@ for _  in range(arv):
     elif kujund == "suvaline":
         suvaline_kujund()
     else:
-        print("Viga, tundmatu kujund!")
+        print("Võõras kujund")
         break
 
 #selge pilt
