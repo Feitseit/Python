@@ -61,3 +61,5 @@ for _  in range(arv):
     else:
         print("Viga, tundmatu kujund!")
         break
+
+#selge pilt
