@@ -11,6 +11,9 @@ if response.status_code == 200:
     data = response.json()
     tooted = data["tooted"]
 
+else:
+    print(f"Viga! Ei suutnud andmeid laadida. Staatuskood: {response.status_code}")
+
 #arvuta koguväärtus (hind * laoseis)
 koguvaartus = sum(
     t["hind"] * t["laoseis"]
@@ -27,3 +30,4 @@ print(f"toidukaupade arv: {toidukaubad_arv}")
 #leia erinevad kategooriad
 kategooriad = {t.get("kategooria") for t in tooted if "kategooria" in t}
 print(f"erinevaid tootekategooriaid: {len(kategooriad)}")
+
